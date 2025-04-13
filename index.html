@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-text">Photo</span>
+            <span class="logo-dot">graphy</span>
+        </div>
+        <div class="theme-toggle" id="themeToggle">
+            <div class="toggle-track">
+                <div class="toggle-thumb"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <button class="nav-btn active" data-section="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </button>
+        <button class="nav-btn" data-section="albums">
+            <i class="fas fa-images"></i>
+            <span>Albums</span>
+        </button>
+    </nav>
+
+    <main class="main-content">
+        <!-- Home Gallery -->
+        <section class="gallery-section active-section" id="homeGallery">
+            <div class="gallery-grid">
+                <!-- Images will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Albums Gallery -->
+        <section class="albums-section" id="albumsGallery">
+            <div class="albums-grid">
+                <!-- Albums will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Viewer -->
+    <div class="image-viewer" id="imageViewer">
+        <button class="close-btn" id="closeBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="viewer-content">
+            <img id="viewedImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
